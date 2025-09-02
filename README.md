@@ -75,5 +75,3 @@ Authors
 
 Saad Shahid: https://www.linkedin.com/in/saad-shahid-560622217/
 Murti Adem: https://www.linkedin.com/in/murti-adem-7a8333172/
-
-Murti Adem
