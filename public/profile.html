@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D-track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D-Track</h1>
+    
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Profile</h2>
+           
+            <p><strong>Username: </strong><span id = "profileUsername"></span></p>
+            <p><strong>Email: </strong><span id = "profileEmail"></span></p>
+
+        </section>
+        <section>
+            <h2>Update Your Information</h2>
+            <form id="profileUpdateForm">
+                <label for="newUsername">New Username</label>
+                <input type="text" id="newUsername" name="newUsername" placeholder="Enter New Username"><br><br>
+                <label for="newEmail">New Email</label>
+                <input type="email" id="newEmail" name="newEmail" placeholder="Enter New Email"><br><br>
+                <button type="submit"> Update Profile</button>
+                </form>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D-track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D-Track</h1>
+    
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form id="Contact" action="#" method="post" onsubmit="contactForm(event)">
+
+                <label for="Name">Name:</label><br>
+                <input type="name" id="ContactName" name="ContactName" placeholder="Enter Your Name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="ContactEmail" name="ContactEmail" placeholder="Enter Your Email" required><br><br>
+                <label for="Message">Message:</label><br> 
+                <textarea id = "ContactTextArea" placeholder="Enter your message" required></textarea><br><br>
+                <button type="submit">Submit</button>                
+             </form>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

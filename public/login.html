@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D-track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D-Track</h1>
+    
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#" class="logout">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+  
+   <main>
+    <section>
+      <fieldset>
+            <h2>Login</h2><br>
+    
+            
+        <form id="login" action="#" method="post">
+
+           <label for="username">Username:</label><br>
+           <input type="text" id="username" name="username" placeholder="Enter Your Username" required><br><br>
+           <label for="password">Password:</label><br>
+           <input type="password" id="password" name="password" placeholder="Enter Your Password" required><br><br> 
+           <button type="submit">Login</button>
+           <button type="button" onclick="registration()">Register</button>
+           
+        </form>
+        <p id="loginError" class="error-message"></p>
+    </fieldset>
+    </section><br>
+    </main>
+  
+      
+    <script src="scripts.js"></script>
+
+    </body>
+</html> 

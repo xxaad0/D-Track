@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D-track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D-Track</h1>
+    
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main> 
+        <section>
+            <h2>Our Healthy Recipes</h2>
+            <div id="recipeList">
+                <article class="recipe">
+                    <h3>Grilled Chicken Salad</h3>
+                    <img src="california-grilled-chicken-salad-recipe-334159-13-8ecd934fee5e42f8b5d38239b083460b.jpg" alt="Grilled Chicken Salad" class="recipe">
+                    <p>Calories: 350 </p>
+                    <p>Description: A healthy grilled chicken salad with mixed greens.</p>
+                </article>
+
+                <article class="recipe">
+                    <h3>Avocado Toast</h3>
+                    <img src="avocado-toast-with-honey-2-1024x683.webp" alt="Avocado Toast" class="recipe">
+                    <p>Calories: 200</p>
+                    <p>Description: Whole-grain toast topped with smashed avocados and chilli flakes.</p>
+                </article>
+
+                <article class="recipe">
+                    <h3>Overnight Oats</h3>
+                    <img src="Double-Chocolate-Overnight-Oats-toppings.jpg" alt="Overnight Oats" class = "recipe">
+                    <p>Calories: 550</p>
+                    <p>Description: A mason jar filled with Oats, fruits, greek yogurt, chia seeds, chocolate chips, and honey left in the fridge overnight.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Create a Recipe</h2>
+
+            <form id = "formR">
+            <label for ="rName">Recipe Name</label>
+            <input type = "text" id = "rName" placeholder="Enter Recipe Name" required><br><br>
+            <label for ="rCalories">Recipe Calories</label>
+            <input type = "text" id = "rCalories" placeholder="Enter Calories" required><br><br>
+            <label for ="rDescription">Recipe Description</label>
+            <input type = "text" id = "rDescription" placeholder="Enter Description" required><br><br>
+            <label for = "rImg">Upload Image</label>
+            <input type = "file" id = "rImg"accept = "image/*"required><br><br>
+
+            <button type = "button" onclick = "createRecipe()">Submit</button>
+        </form>
+
+
+
+        <article class = "recipe">
+            <h2 id = "pName">Recipe Name</h2>
+            <img id = "pImg" alt = "Image to be displayed">
+            <p id = "pCalories">Calories</p>
+            <p id = "pDescription">Description</p>
+        </article>
+        
+
+        </section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

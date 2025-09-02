@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D-track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>D-Track</h1>
+    
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="more.html">More</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section id="welcomeSection">
+            <h2 id="Welcome">Welcome!</h2>
+
+            <p>Track your intake of calories and reach those healthy goals!</p>
+            <img src = "th.jpeg" alt ="Welcome to your ultimate guide D-Track" id = "welcomeimage" height="">
+        </section>
+
+        <section id="calorieIntake">
+            <h2>Today's Calorie Intake</h2>
+            <p>Calories You've Consumed Today: <span id="caloriesConsumed">0</span> / <span id ="caloricGoal">2200</span></p>
+            <progress id="calorieProgress" value="0" max="2200"></progress>
+
+                <h2>Add Your Calories</h2>
+                <form id="addFoodForm" action = "/add-food" method = "post">
+                    <label for="foodName">Food Name</label>
+                    <input type="text" id="foodName" name="foodName" placeholder="Enter your Food" required><br>
+                    <label for="foodCalories">Calories</label>
+                    <input type="number" id="foodCalories" name="foodCalories" placeholder="Enter calories" required><br>
+                    <button type="submit">Add Food</button>
+                    <button id="resetProgress">Reset Progress</button>
+                </form>
+            </section>
+            
+            <section id = "coolrecipes">
+                <h2>Our Famous Recipes</h2>
+                <div id = "recipeList">
+                    <article class = "recipe">
+                        <img src = "th2.jpeg" alt = "Healthy Breakfast">
+                        <h3>A Healthy Meal</h3>
+                        <p>Low calorie meal ready for your needs</p>
+
+                        <button id = "recipeA"onclick="viewRecipe(1)">View recipe</button>
+
+                    </article>
+                    <article class = "recipe">
+                        <img src = "th3.jpeg" alt = "Healthy Snack">
+                        <h3>A Healthy Meal</h3>
+                        <p>Low calorie snack ready for your needs</p>
+                        <button id = "recipeB"onclick="viewRecipe(2)">View recipe</button>
+                        </article>
+                </div>
+            </section>
+    
+    </main>
+
+    <div id = "recipeView"class = "recipeView">
+        <div class = "recipeContent">
+            <span class="close" onclick="closeRecipe()">&times;</span>
+            
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <footer>
+        <p>&copy; Rights Reserved: Saad and Murti</p>
+    </footer>
+</body>
+</html>
